@@ -9,3 +9,6 @@ EXEC --file builder.makejail --before-include "${airsonic_refix_options}" --name
 CMD echo "======> Installing Airsonic (refix) UI... <======"
 COPY --verbose usr
 COPY --verbose --jail "${airsonic_refix_builder}" /airsonic-refix/dist /usr/local/www/airsonic-refix
+
+CMD echo "======> Destroying builder... <======"
+DESTROY --force "${airsonic_refix_builder}"
