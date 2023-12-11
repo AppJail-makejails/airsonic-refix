@@ -1,0 +1,11 @@
+INCLUDE gh+AppJail-makejails/nginx
+
+ARG airsonic_refix_builder=airsonic_refixb
+ARG airsonic_refix_options
+
+CMD echo "======> Building Airsonic (refix) UI... <======"
+EXEC --file builder.makejail --before-include "${airsonic_refix_options}" --name "${airsonic_refix_builder}"
+
+CMD echo "======> Installing Airsonic (refix) UI... <======"
+COPY --verbose usr
+COPY --verbose --jail "${airsonic_refix_builder}" /airsonic-refix/dist /usr/local/www/airsonic-refix

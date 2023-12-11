@@ -1,0 +1,13 @@
+INCLUDE options/options.makejail
+
+ARG airsonic_refix_tag=13.2
+ARG airsonic_refix_server_url?
+
+FROM --entrypoint gh+AppJail-makejails/airsonic-refix airsonic-refix:${airsonic_refix_tag}
+
+RAW if [ -n "${airsonic_refix_server_url}" ]; then
+	COPY files/env.js.template /usr/local/www/airsonic-refix/env.js
+	REPLACE /usr/local/www/airsonic-refix/env.js SERVER_URL ${airsonic_refix_server_url}
+RAW else
+	CMD touch /usr/local/www/airsonic-refix/env.js
+RAW fi

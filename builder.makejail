@@ -1,0 +1,10 @@
+INCLUDE options/options.makejail
+
+CMD echo "======> Installing dependencies (build) <======"
+PKG git-lite yarn
+
+CMD echo "======> Cloning... <======"
+CMD git clone --depth 1 https://github.com/tamland/airsonic-refix.git /airsonic-refix
+
+CMD echo "======> Compiling <======"
+CMD cd /airsonic-refix; yarn install && yarn build
