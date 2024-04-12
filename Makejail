@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG airsonic_refix_tag=13.2
+ARG airsonic_refix_tag=13.3
 ARG airsonic_refix_server_url?
 
 FROM --entrypoint gh+AppJail-makejails/airsonic-refix airsonic-refix:${airsonic_refix_tag}
