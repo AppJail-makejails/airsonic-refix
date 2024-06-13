@@ -1,3 +1,5 @@
+INCLUDE options/options.makejail
+
 ARG airsonic_refix_builder=airsonic_refixb
 ARG airsonic_refix_options
 
