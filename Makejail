@@ -12,3 +12,6 @@ RAW if [ -n "${airsonic_refix_server_url}" ]; then
 RAW else
 	CMD touch /usr/local/www/airsonic-refix/env.js
 RAW fi
+
+SYSRC nginx start
+SERVICE nginx start
