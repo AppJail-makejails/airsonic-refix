@@ -1,5 +1,7 @@
 INCLUDE options/options.makejail
 
+OPTION ephemeral
+
 CMD echo "======> Installing dependencies (build) <======"
 PKG git-lite yarn
 
