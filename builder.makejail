@@ -7,4 +7,6 @@ CMD echo "======> Cloning... <======"
 CMD git clone --depth 1 https://github.com/tamland/airsonic-refix.git /airsonic-refix
 
 CMD echo "======> Compiling <======"
+# Workaround for "info There appears to be trouble with your network connection. Retrying..."
+CMD yarn config set network-timeout 600000 -g
 CMD cd /airsonic-refix; yarn install && yarn build
