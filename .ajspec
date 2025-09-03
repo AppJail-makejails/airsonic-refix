@@ -1,16 +1,17 @@
 tags+: 13.5
 13.5.arch: amd64
 13.5.name: "airsonic-refix"
-13.5.timestamp.amd64: 1755258471
-13.5.sum.amd64: c1c84f33dd79761ac728d6d195e436f5cfc99966ea1fa03ddf0a97640a32847d
-13.5.size.amd64: 34566682
+13.5.timestamp.amd64: 1756916040
+13.5.sum.amd64: b828c03698fe5db3af8a598b17ed3dc0961c014e1c1e45b2a741b17e53b88247
+13.5.size.amd64: 34190532
 13.5.source.amd64: "https://images.all101bsd.download/airsonic-refix/13.5-amd64-image.appjail"
 13.5.source.amd64+: "http://appjail.hpc.at/airsonic-refix/13.5-amd64-image.appjail"
 tags+: 14.3
 14.3.arch: amd64
 14.3.name: "airsonic-refix"
-14.3.timestamp.amd64: 1755259005
-14.3.sum.amd64: 0ff7f020cb3d696e02fcc687617582c313a434c071850dff5f72519c6f1e143e
-14.3.size.amd64: 33957570
+14.3.timestamp.amd64: 1756916590
+14.3.sum.amd64: 4e93a27a10ff5dcbaf7b0a6325645e556629f8b2ce0539f312f80ea1aa6dd656
+14.3.size.amd64: 34113540
 14.3.source.amd64: "https://images.all101bsd.download/airsonic-refix/14.3-amd64-image.appjail"
 14.3.source.amd64+: "http://appjail.hpc.at/airsonic-refix/14.3-amd64-image.appjail"
+maintenance: "This image is uploading, please wait a moment and try again. If you are importing this image using a Makejail that has the '--<name>_ajspec' argument, you can use the 'reproduce' method to use 'appjail-reproduce'. See 'appjail-image(5)' for details."
