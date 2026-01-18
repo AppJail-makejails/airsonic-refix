@@ -1,6 +1,6 @@
 INCLUDE options/options.makejail
 
-ARG airsonic_refix_tag=13.5
+ARG airsonic_refix_tag=14.3
 ARG airsonic_refix_ajspec=gh+AppJail-makejails/airsonic-refix
 ARG airsonic_refix_server_url?
 

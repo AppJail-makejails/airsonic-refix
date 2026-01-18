@@ -40,5 +40,5 @@ appjail makejail \
 
 | Tag    | Arch     | Version        | Type   |
 | ------ | -------- | -------------- | ------ |
-| `13.5` | `amd64`  | `13.5-RELEASE` | `thin` |
 | `14.3` | `amd64`  | `14.3-RELEASE` | `thin` |
+| `15` | `amd64`  | `15` | `thin` |
